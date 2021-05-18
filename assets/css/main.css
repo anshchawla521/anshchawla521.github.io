@@ -1,10 +1,56 @@
-h2 {
+h1 {
   font-size: 35px;
   letter-spacing: 3px;
+  text-align: center;
+  text-transform: capitalize;
+  margin: 20px auto;
+}
+#wrapper h2 {
+  /* float: left; */
+  width: fit-content;
+  max-width: 90%;
+  box-sizing: border-box;
+  display: block;
+  margin: 20px 20px;
+  padding: 0px 20px 10px 10px;
+  letter-spacing: 4px;
+  font-size: x-large;
+  text-transform: uppercase;
+  text-align: left;
+  border-bottom: 2px solid currentColor;
+}
+h3 {
+  text-align: left;
+  width: fit-content;
+  /* border-bottom: 2px solid currentColor; */
+  padding:10px;
+  text-transform: capitalize;
+  margin: 10px 18px;
+  letter-spacing: 1px;
+  font-size: 20px;
+}
+h4 {
+  text-align: left;
+  text-transform: capitalize;
+  margin: 10px 18px;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+ul {
+  list-style: disc inside none;
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+  padding-top: 0px;
+  text-align: left;
+}
+li {
+  margin-top: 30px;
+  margin-left: 20px;
 }
 
 #wrapper {
-  width: 80%;
+  width: fit-content;
   max-width: 500px;
   min-width: 330px;
   border-radius: 8px;
@@ -18,12 +64,13 @@ h2 {
     background-color: rgba(245 ,222 , 179 , 0.9);*/
   background-color: rgba(27, 31, 34, 0.7);
   text-align: center;
-  padding: 20px 0 0 0;
+  padding: 20px 10px 0 10px;
   color: white;
 }
 
 body {
   width: 100vw;
+
   min-height: 100vh;
   height: auto;
   margin: auto;
@@ -47,7 +94,7 @@ body {
   margin: auto;
   padding: auto;
   display: block;
-
+  box-shadow: 0px 0px 9px 2px whitesmoke;
   width: 70px;
   height: 70px;
   line-height: 70px;
@@ -67,18 +114,20 @@ body {
 }
 #headermain ul {
   margin: 0px auto;
-  padding: 0;
+  padding: 0px;
   text-align: center;
   display: inline-block;
   text-transform: capitalize;
   line-height: 40px;
   border-radius: 10px;
+  /* box-shadow: 0px 0px 9px 2px whitesmoke; */
   border-style: solid;
   border-color: white;
   border-width: 1.5px;
   overflow: hidden;
 }
 #headermain ul li {
+  content: none;
   text-decoration: none;
   list-style: none;
   display: inline-block;
@@ -181,39 +230,41 @@ body {
   background-color: rgba(255, 255, 255, 0.1);
   transform: scale(1.2);
 }
-#contact {
+
+
+
+.sections {
   width: 100%;
+
   display: none;
-  margin: 10px auto;
+  padding: 5px 0px 0px 0px;
   visibility: hidden;
-}
-#wrapper h1 {
-  float: left;
   box-sizing: border-box;
-  display: block;
-  margin: 20px 40px 20px 25px;
-  padding: 0px 20px 10px 10px;
-  letter-spacing: 4px;
-  font-size: x-large;
-  text-transform: uppercase;
-  text-align: left;
-  border-bottom: 2px solid currentColor;
 }
-#wrapper h2 {
-  font-size: 35px;
-  letter-spacing: 3px;
-  text-align: center;
-  text-transform: capitalize;
-  margin: 20px auto;
+.sections p:first-child {
+  margin-top: 20px;
 }
-#contact h3 {
-  text-align: center;
-  text-transform: capitalize;
-  margin: 10px auto;
+.sections p {
+  text-decoration: none;
+  display: inline-block;
+  margin: 10px 30px 10px 30px;
   letter-spacing: 1px;
-  font-weight: 500;
-  font-size: 20px;
+  text-align: left;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 18px;
+  font-size: 13px;
 }
+
+.sections p:last-child {
+  margin-bottom: 20px;
+}
+
+.sections a {
+  text-decoration: underline;
+  color: white;
+}
+
 #avtar {
   display: inline-block;
   width: 100%;
@@ -221,7 +272,7 @@ body {
   margin: 10px auto;
   padding-top: 0px;
 }
-#contact img {
+#avtar img {
   border-radius: 100%;
   width: 200px;
   height: 200px;
@@ -235,18 +286,22 @@ body {
     box-shadow 0.25s ease-in-out;
 }
 
-#contact img:hover {
+#avtar img:hover {
   margin: 10px auto;
   transform: scale(1.1);
   /*border-radius: 0;*/
   box-shadow: 0 0 8px 4px rgb(255, 205, 255);
 }
 #contact ul {
-  list-style: none;
-  text-decoration: none;
-  padding: 20px;
-  margin: auto;
   text-align: center;
+  margin: auto;
+  padding-top: 20px;
+}
+#contact h3{
+  text-align: center;
+  margin:auto;
+  border:none;
+
 }
 #contact ul li {
   width: 35px;
@@ -272,34 +327,6 @@ body {
   transform: scale(1.3);
   background-color: #fa75ba;
 }
-#intro {
-  width: 100%;
-
-  display: none;
-  padding: 0 0px 0 0px;
-  visibility: hidden;
-  box-sizing: border-box;
-}
-#intro p:first-child {
-  margin-top: 20px;
-}
-#intro p {
-  text-decoration: none;
-  display: inline-block;
-  margin: 10px 30px 10px 30px;
-
-  text-align: left;
-  color: white;
-}
-
-#intro p:last-child {
-  margin-bottom: 20px;
-}
-
-#intro a {
-  text-decoration: none;
-  color: white;
-}
 
 .imagemain {
   margin: 0;
@@ -313,7 +340,8 @@ body {
 .imagemain img {
   width: 100%;
   border-radius: 8px;
-  border-style: solid;
+  /* box-shadow:  0px 0px 5px 5px rgba(255, 255, 255, 0.308); */
+
 }
 
 #footer {
@@ -321,7 +349,7 @@ body {
   text-align: center;
   width: 100%;
   text-transform: capitalize;
-  margin-top: 10px;  /* although no use because collapsable margins*/
+  margin-top: 10px; /* although no use because collapsable margins*/
   margin-bottom: 8px;
 }
 
@@ -330,17 +358,18 @@ body {
     display: block;
     width: 100%;
   }
-  #headermain ul :not(:last-child) {
+  #headermain ul li:not(:last-child) {
     content: " ";
     border-bottom: solid 1.5px white;
     border-right: none;
   }
-  #headermain h1 {
+
+  #headermain h2 {
     font-size: x-large;
     margin-top: 20px;
     margin-bottom: 20px;
   }
-  
+
   #headermain {
     min-width: 310px; /* just specifying that it can  decrase the width it doesnt have to fit all text in one line*/
     width: auto;
@@ -365,5 +394,4 @@ body {
   #wrapper {
     margin-top: 0;
   }
-  
 }

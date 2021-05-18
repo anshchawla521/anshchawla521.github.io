@@ -40,10 +40,10 @@ function checklink(){
 
 
         // looking for all divs with class headings and hding them and at end hiding wrapper
-        let x = Array.from(document.getElementById("wrapper").querySelectorAll(".headings"));
+        let x = Array.from(document.getElementById("wrapper").querySelectorAll(".sections"));
         x.forEach(function(item ){
         
-        if(item.className.indexOf('headings') >= 0)
+        if(item.className.indexOf('sections') >= 0)
         {
             
             document.getElementById(item.id).style.visibility = "hidden";
@@ -61,10 +61,10 @@ function checklink(){
         //if something is added after hash check if its a valid section or not
         currentlocation = currentlocation.substring(1);
         let valid = false;
-        let x = Array.from(document.getElementById("wrapper").querySelectorAll(".headings"));
+        let x = Array.from(document.getElementById("wrapper").querySelectorAll(".sections"));
         x.forEach(function(item ){
         
-        if(item.className.indexOf('headings') >= 0)
+        if(item.className.indexOf('sections') >= 0)
         { document.getElementById(item.id).style.visibility = "hidden";
           document.getElementById(item.id).style.display = "none";
             if(item.id === currentlocation )
@@ -98,6 +98,7 @@ function checklink(){
     }else{
         //window.location.hash = '';
         window.alert("invalid section or under development");
+        window.history.back();
         //document.getElementById("wrapper").style.visibility = "hidden";
         //document.getElementById("wrapper").style.display = "none";
     }
