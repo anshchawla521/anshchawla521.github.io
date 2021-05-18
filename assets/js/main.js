@@ -63,15 +63,13 @@ function checklink(){
         x.forEach(function(item ){
         
         if(item.className.indexOf('headings') >= 0)
-        {
+        { document.getElementById(item.id).style.visibility = "hidden";
+          document.getElementById(item.id).style.display = "none";
             if(item.id === currentlocation )
             {
                 logintoconsole("valid");
                 valid = true;
-                return;
-            }else{
-                document.getElementById(item.id).style.visibility = "hidden";
-                document.getElementById(item.id).style.display = "none";
+                //return;
             }
         }
     });
@@ -88,10 +86,10 @@ function checklink(){
         document.getElementById("wrapper").style.visibility = "visible";
         document.getElementById("wrapper").style.display = "block";
     }else{
-        window.location.hash = '';
+        //window.location.hash = '';
         window.alert("invalid section or under development");
-        document.getElementById("wrapper").style.visibility = "hidden";
-        document.getElementById("wrapper").style.display = "none";
+        //document.getElementById("wrapper").style.visibility = "hidden";
+        //document.getElementById("wrapper").style.display = "none";
     }
 }
 
