@@ -27,7 +27,7 @@ window.onhashchange = checklink;
 
 function checklink(){
     let currentlocation = window.location.hash;
-    logintoconsole(`the location is ${currentlocation}`);
+    //logintoconsole(`the location is ${currentlocation}`);
 
 
     if( !currentlocation  || currentlocation === '#')
@@ -85,6 +85,14 @@ function checklink(){
         document.getElementById(currentlocation).style.display = "block";
         document.getElementById("wrapper").style.visibility = "visible";
         document.getElementById("wrapper").style.display = "block";
+        //unhide then start loading the img
+        let images = document.getElementById(currentlocation).querySelectorAll("img");
+        images.forEach(function(img){
+            img.src = img.dataset.src; 
+        });
+
+
+
     }else{
         //window.location.hash = '';
         window.alert("invalid section or under development");

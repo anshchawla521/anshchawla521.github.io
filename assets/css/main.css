@@ -24,7 +24,8 @@ h2 {
 
 body {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
   margin: auto;
   background-color: rgba(10, 9, 10, 0.918);
   /* background-image: url(../../images/bg.jpg); */
@@ -320,7 +321,7 @@ body {
   text-align: center;
   width: 100%;
   text-transform: capitalize;
-  margin-top: 0 auto;
+  margin-top: 10px;  /* although no use because collapsable margins*/
   margin-bottom: 8px;
 }
 
@@ -339,8 +340,10 @@ body {
     margin-top: 20px;
     margin-bottom: 20px;
   }
+  
   #headermain {
-    min-width: 310px;
+    min-width: 310px; /* just specifying that it can  decrase the width it doesnt have to fit all text in one line*/
+    width: auto;
   }
   body {
     padding: 20px;
@@ -348,7 +351,10 @@ body {
     width: fit-content;
   }
   #content::before {
-    height: 20px;
+    height: 35px;
+  }
+  #content::after {
+    height: 35px;
   }
   #wrapper {
     margin-top: 5%;
@@ -359,4 +365,5 @@ body {
   #wrapper {
     margin-top: 0;
   }
+  
 }
