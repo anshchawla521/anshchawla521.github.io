@@ -40,8 +40,8 @@ body {
   min-width: 370px;
   margin: 10% auto;
   text-align: center;
-  display: block;
-  visibility: visible;
+  display: none;
+  visibility: hidden;
 }
 #logo {
   margin: auto;
@@ -183,7 +183,7 @@ body {
 }
 #contact {
   width: 100%;
-  display: block;
+  display: none;
   margin: 10px auto;
   visibility: hidden;
 }
@@ -275,7 +275,7 @@ body {
 #intro {
   width: 100%;
 
-  display: block;
+  display: none;
   padding: 0 0px 0 0px;
   visibility: hidden;
   box-sizing: border-box;

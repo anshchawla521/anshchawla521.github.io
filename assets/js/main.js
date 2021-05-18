@@ -3,7 +3,7 @@
 //also typeof function is defined no brackets required is defined
 // use === for generally bcz it compares data type doesnt do automatic onversion
 //whereas == does data type conversion if mismatch 
-const debug = true;
+const debug = false;
 function logintoconsole(temp)
 {
     if (debug)
@@ -24,10 +24,12 @@ function back()
 
 
 window.onhashchange = checklink;
+window.onload = checklink;
 
 function checklink(){
     let currentlocation = window.location.hash;
-    //logintoconsole(`the location is ${currentlocation}`);
+    logintoconsole(`i got called 1 time`);
+    logintoconsole(`the location is ${currentlocation}`);
 
 
     if( !currentlocation  || currentlocation === '#')
@@ -80,7 +82,7 @@ function checklink(){
         document.getElementById("headermain").style.visibility = "hidden";
         document.getElementById("headermain").style.display = "none";
         logintoconsole("header hidden");
-        
+        document.title = currentlocation.toLocaleUpperCase();
         document.getElementById(currentlocation).style.visibility = "visible";
         document.getElementById(currentlocation).style.display = "block";
         document.getElementById("wrapper").style.visibility = "visible";
@@ -112,6 +114,3 @@ document.body.addEventListener('click', function (event) {
     }
 });
 
-
-
-checklink();
