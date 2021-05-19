@@ -3,7 +3,7 @@
 //also typeof function is defined no brackets required is defined
 // use === for generally bcz it compares data type doesnt do automatic onversion
 //whereas == does data type conversion if mismatch 
-const debug = false;
+const debug = true;
 function logintoconsole(temp)
 {
     if (debug)
@@ -28,7 +28,6 @@ window.onload = checklink;
 
 function checklink(){
     let currentlocation = window.location.hash;
-    logintoconsole(`i got called 1 time`);
     logintoconsole(`the location is ${currentlocation}`);
 
 
@@ -37,8 +36,7 @@ function checklink(){
         document.getElementById("headermain").style.visibility = "visible";
         document.getElementById("headermain").style.display = "block";
         logintoconsole("header visible");
-
-
+        document.title = document.getElementById("headermain").dataset.title;
         // looking for all divs with class headings and hding them and at end hiding wrapper
         let x = Array.from(document.getElementById("wrapper").querySelectorAll(".sections"));
         x.forEach(function(item ){
@@ -79,10 +77,10 @@ function checklink(){
     // if its valid show it and hide others
     // if invalid do return to mane page
     if(valid){
+        document.title = document.getElementById(currentlocation).dataset.title;
         document.getElementById("headermain").style.visibility = "hidden";
         document.getElementById("headermain").style.display = "none";
         logintoconsole("header hidden");
-        document.title = currentlocation.toLocaleUpperCase();
         document.getElementById(currentlocation).style.visibility = "visible";
         document.getElementById(currentlocation).style.display = "block";
         document.getElementById("wrapper").style.visibility = "visible";

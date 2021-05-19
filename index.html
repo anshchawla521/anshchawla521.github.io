@@ -19,7 +19,7 @@
     
     <body id="main-body">
         
-        <header id ="headermain">
+        <header id ="headermain" data-title="Ansh Chawla">
             <div id = "logo">
             <i class="fab fa-black-tie"></i>
             </div>
@@ -39,20 +39,19 @@
         </header>
         <div id = "wrapper">
         <div id= "mainbuttons">
-            <span id="back" ><a href="#" onclick="back();"><i class="fas fa-arrow-left"></i></a></span>
-            <span id="close" ><a href="#" ><i id="close" class="fas fa-times"></i></a></span>
+            <div id="back" ><a href="#" onclick="back();"><i class="fas fa-arrow-left"></i></a></div>
+            <div id="close" ><a href="#" ><i id="close" class="fas fa-times"></i></a></div>
         </div>
 
         <!-- Intro -->
-        <div id="intro" class="sections">
+        <div id="intro" class="sections" data-title="Intro">
             <h2><i class="far fa-arrow-alt-circle-right"></i>Intro</h2>
             <div class = "imagemain"><img src="" data-src= "../../images/intro.jpg" alt="dispaly picture" /></div>
             <p>Hi , Myself Ansh Chawla currently pursuing B-Tech in Electronics from Punjab Engineering college.From an early age I have had passion in electronics and I made projects to solve house hold problems.I have even made a drone during my High School period .To know more about my work visit <a href="#projects">my projects page.</a>.</p>
             <p>Apart from electronics , football is one sport I like to play but without rules(because I know none 😜). With this varied liking , I always yern to learn more and more about different sectors of society and look for an alernative approach to solve the current problems like creating a food delivery bot <a href="#swayamsevika">Swayam Sevika</a> for Covid-19 under CSRC department of PEC.  </p>
             
         </div>
-
-        <div id="projects" class = "sections">
+        <div id="projects" class = "sections" data-title="Projects">
             <h2><i class="fab fa-android"></i>Projects</h2>
             <div class="imagemain"><img src="" data-src="../../images/featured-project.jpg"  alt="Featured Project" ><p style="text-align:center; padding-bottom: 4px;"><a href="#swayamsevika">Swayam Sevika</a></p></div>
             <p><h3>Live Projects</h3>
@@ -79,7 +78,7 @@
 
         </div>
         <!-- contact -->
-        <div id="contact" class="sections" >
+        <div id="contact" class="sections" data-title="Contact" >
             
             <h2><i class="far fa-id-card"></i> Contact</h2>
             <div id="avtar">
@@ -96,6 +95,25 @@
                 
             </ul>
         </div>
+        
+        <!--PROKECTS START HERE-->
+        
+
+        <div id="ACU" class="sections" data-title="Automatic Case Updater">
+            <h2 class="major">Automatic Case Updater</h2>
+            <div class="imagemain"><img src="" data-src="../../images/ACU.jpg" alt="" /><img src="" data-src="../../images/ACU1.jpg" alt="" /></div>
+            <p>This was a python program I Wrote which did web scrapping on site of highcourt Chandigarh to gain info about different cases and then puts that into an excel file and also sets a reminder in google calander .I wrote this program to help my Mother and Father as they are lawyers. This program also deleted any repeated case entries, organised the case data in excel file neatly. It used Google's API's(calander and drive Api) .It used libraries such as Gspread , requests , pickle , google o-auth .   </p>
+        </div>
+
+
+
+
+
+
+
+
+
+
         </div>
         <footer id="footer">
             © designed by Ansh Chawla
