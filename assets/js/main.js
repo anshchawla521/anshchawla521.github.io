@@ -118,6 +118,7 @@ function pausevideo(location){
 
 
 
+
 window.onhashchange = checklink;
 window.onload = checklink;
 

@@ -42,6 +42,7 @@ ul {
   text-decoration: none;
   padding: 20px;
   padding-top: 0px;
+  padding-bottom: 50px;
   text-align: left;
 }
 li {
@@ -323,6 +324,7 @@ body {
   text-align: center;
   padding-left: 30px;
   padding-right: 30px;
+  padding-bottom: 10px;
   box-sizing: border-box;
   width: 100%;
   border-radius: 8px;
