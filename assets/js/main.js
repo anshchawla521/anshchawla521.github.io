@@ -106,7 +106,7 @@ function createmodal(currentlocation){
     imagegallery.appendChild(modal);
     modal.appendChild(document.createElement('img'));
     imagegallery = imagegallery.querySelectorAll('img');
-    console.log(imagegallery)
+    // console.log(imagegallery)
     imagegallery.forEach(function(image){
     image.onclick = function(){
         // let modal = document.getElementsByClassName('modal');
@@ -201,7 +201,7 @@ function checklink(){
             if(item.id === currentlocation )
             {
                 //if the section to be accessed exists show it
-                console.log("valid");
+                // console.log("valid");
                 valid = true;
                 //return;
             }else{
