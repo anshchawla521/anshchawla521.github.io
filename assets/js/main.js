@@ -9,7 +9,7 @@
 const debug = true;
 var isYoutubeReady = false;
 var videoQueue = Array();
-
+var currentlocation = window.location.hash;
 
 //  YOUTUBE
 var tag = document.createElement('script');
@@ -68,29 +68,67 @@ videoQueue.pop();
 })
 }
 }
-function logintoconsole(temp)
-{
-    if (debug)
-    {
-        console.log(temp);
-    }
-}
+
+
 
 function back()
 {
-    let currentlocation = window.location.hash;
-    currentlocation = currentlocation.substring(1);
     pausevideo(currentlocation);
     window.history.back()
 }
 function clos()
 {
-    let currentlocation = window.location.hash;
-    currentlocation = currentlocation.substring(1);
+    
     pausevideo(currentlocation);
     location.hash="#";
     
 }
+
+function createmodal(currentlocation){
+    // will check if a particular image is part of gallery class or not if yes add modal div in bottom line
+    if(document.getElementById(currentlocation).querySelector(".imagegallery")){
+    let imagegallery = document.getElementById(currentlocation).querySelector(".imagegallery");
+    if(!imagegallery.querySelector('.modal')){
+    let modal = document.createElement('div');
+
+
+
+    let button = document.createElement('a');
+    button.onclick = destroymodal;
+    let icon = document.createElement('i');
+    icon.className = ("fas fa-times");
+    button.appendChild(icon);
+    modal.appendChild(button);
+
+
+
+    modal.classList.add('modal');
+    imagegallery.appendChild(modal);
+    modal.appendChild(document.createElement('img'));
+    imagegallery = imagegallery.querySelectorAll('img');
+    console.log(imagegallery)
+    imagegallery.forEach(function(image){
+    image.onclick = function(){
+        // let modal = document.getElementsByClassName('modal');
+        // console.log(modal);
+        modal.style.display = 'block';
+        modal.querySelector('img').src = this.src;
+        
+        
+    };
+});
+    }
+}
+}
+function destroymodal()
+{ 
+    if(document.getElementById(currentlocation).querySelector(".imagegallery")){
+        if(document.getElementById(currentlocation).querySelector(".imagegallery").querySelector('.modal')){
+            document.getElementById(currentlocation).querySelector(".imagegallery").querySelector(".modal").style.display = "none";
+        }
+    }
+}
+
 
 
 
@@ -123,15 +161,15 @@ window.onhashchange = checklink;
 window.onload = checklink;
 
 function checklink(){
-    let currentlocation = window.location.hash;
-    logintoconsole(`the location is ${currentlocation}`);
+    currentlocation = window.location.hash;
+    // console.log(`the location is ${currentlocation}`);
 
 
     if( !currentlocation  || currentlocation === '#')
     {
         document.getElementById("headermain").style.visibility = "visible";
         document.getElementById("headermain").style.display = "block";
-        logintoconsole("header visible");
+        console.log("header visible");
         document.title = document.getElementById("headermain").dataset.title;
         // looking for all divs with class headings and hding them and at end hiding wrapper
         let x = Array.from(document.getElementById("wrapper").querySelectorAll(".sections"));
@@ -163,7 +201,7 @@ function checklink(){
             if(item.id === currentlocation )
             {
                 //if the section to be accessed exists show it
-                logintoconsole("valid");
+                console.log("valid");
                 valid = true;
                 //return;
             }else{
@@ -187,17 +225,21 @@ function checklink(){
         document.getElementById("headermain").style.display = "none";
         document.getElementById(currentlocation).style.visibility = "visible";
         document.getElementById(currentlocation).style.display = "block";
+        destroymodal();
         document.getElementById("wrapper").style.visibility = "visible";
         document.getElementById("wrapper").style.display = "block";
         loadvideo(currentlocation);
         
         //unhide then start loading the img
         let images = document.getElementById(currentlocation).querySelectorAll("img");
+       
+
         images.forEach(function(img){
             img.src = img.dataset.src; 
+            
         });
-
-
+        createmodal(currentlocation);
+  
 
     }else{
         //window.location.hash = '';
@@ -213,13 +255,15 @@ function checklink(){
 }
 
 document.body.addEventListener('click', function (event) {
-    // logintoconsole("i am getting executed");
+    // console.log("i am getting executed");
     if (document.getElementById("main-body").contains(event.target) && 
         !document.getElementById("wrapper").contains(event.target)) 
     {
         clos();
     }
 });
+
+
 
 
 

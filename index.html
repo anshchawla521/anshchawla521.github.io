@@ -38,8 +38,8 @@
         </header>
         <div id = "wrapper">
         <div id= "mainbuttons">
-            <div id="back" ><a onclick="back();" style="float:left;"><i class="fas fa-arrow-left"></i></a></div>
-            <div id="close" ><a onclick="clos();"style="float:right;"><i id="close" class="fas fa-times"></i></a></div>
+            <a onclick="back();" style="float:left;"><i class="fas fa-arrow-left"></i></a>
+            <a onclick="clos();" style="float:right;"><i class="fas fa-times"></i></a>
         </div>
 
         <!-- Intro -->
@@ -129,7 +129,7 @@
 
         <div id="esp32cam" class="sections" data-title="Esp32 telegram Doorbell">
             <h2><i class="fas fa-bell"></i> ESP32 Smart doorbell</h2>
-            <div class="imagemain"><img data-src="../images/Esp32/esp32.jpg" alt="Door Bell Picture"></div>
+            <div class="imagemain"><img data-src="../images/Esp32/esp32.jpg" alt="Door Bell Picture" ></div>
             <p>This is low cost smart doorbell which is based around an Esp32 micontroller which sends a photo of the person who rang the bell outside the door via Telegram Api.
                 It ties into a current doorbell system. </p>
                 <p>It detects the doorbell push via a circuit known as capacitive dropper which i used to power an optocoupler which then signals the microcontroller that someone has pushed the bell and hence the microcontroller takes a photo and sends it into a telgram group in which members of the house could be added.</p>
@@ -142,6 +142,25 @@
             <div class="imagemain"><img data-src="../../images/ACU.jpg" alt="" ><img src="" data-src="../../images/ACU1.jpg" alt="" ></div>
             <p>This was a python program I Wrote which did web scrapping on site of highcourt Chandigarh to gain info about different cases and then puts that into an excel file and also sets a reminder in google calander .I wrote this program to help my Mother and Father as they are lawyers. This program also deleted any repeated case entries, organised the case data in excel file neatly. It used Google's API's(calander and drive Api) .It used libraries such as Gspread , requests , pickle , google o-auth .   </p>
         </div>
+        <div id="BSC" class= "sections" data-title="Bluetooth Solar Car">
+            <h2>Bluetooth Solar Car</h2>
+            <div class="imagemain"><img  src = "" datasrc="images/BSC/BSC.jpg" alt="" /></div>
+            <p>This was a car which had a solar panel on top for charging and powering of the car , it also has ultrasonic sensor in front of the car for detecting if someone comes in front while driving and deaccerlate the car to prevent accidents its was bluetooth controlled and the app was also made by me using the MIT app inventor tool. </p>
+            
+
+            <h2>Image Gallery</h2>
+            <div class = "imagegallery">
+            <img data-src="../images/Esp32/esp32.jpg">
+            <img data-src="../images/BSC/BSC.jpg">
+            <img data-src="../images/BSC/BSC4.jpg">
+            <img data-src="../images/BSC/BSC3.jpg">
+            <img data-src="../images/BSC/BSC2.jpg">
+            <img data-src="../images/BSC/BSC5.jpg">
+            </div>
+            
+        </div>
+
+        
 
         <div id="AAS" class="sections" data-title="Automatic Aquaguard System">
             <h2>Automatic Aquaguard System</h2>

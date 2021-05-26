@@ -333,15 +333,19 @@ body {
 
 .imagemain img {
   width: 100%;
-
   border-radius: 8px;
   /* box-shadow:  0px 0px 5px 5px rgba(255, 255, 255, 0.308); */
   box-shadow: 0px 0px 5px 5px wheat;
 }
 
+
 .imagemain img:not(:last-child) {
   margin-bottom: 15px;
 }
+.imagemain img:hover {
+  cursor: pointer;
+}
+
 .imagemain img:last-child) {
   margin-bottom: 10px;
 }
@@ -354,6 +358,54 @@ body {
   margin-bottom: 20px;
   border-radius: 8px;
   box-shadow: 0px 0px 5px 5px red;
+}
+
+.imagegallery {
+  width: 100%;
+  vertical-align: top;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.imagegallery img {
+  cursor: pointer;
+  width: 40%;
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 60px; /*Location of the box */
+  box-sizing: border-box;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.85); /* Black w/ opacity */
+}
+.modal img {
+  cursor:auto;
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  
+}
+.modal a 
+{
+  position: absolute;
+  top: 15px;
+  right: 45px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+  cursor: pointer;
 }
 
 #footer {
@@ -412,6 +464,13 @@ body {
   #mainbuttons a {
     margin-left: 10px;
     margin-right: 10px;
+  }
+
+  .modal img{
+    width: 100%;
+  }
+  .modal a{
+    right: 10px;
   }
 }
 
