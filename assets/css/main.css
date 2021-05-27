@@ -53,14 +53,14 @@ li {
 #wrapper {
   width: fit-content;
   max-width: 500px;
-  min-width: 330px;
+  min-width: 360px;
   border-radius: 8px;
   min-height: 500px;
   margin: 50px auto;
   display: none;
   visibility: hidden;
   box-shadow: 0 0 12px 12px white;
-
+  box-sizing: border-box;
   /*height:80vh;
     background-color: rgba(245 ,222 , 179 , 0.9);*/
   background-color: rgba(27, 31, 34, 0.7);
@@ -71,7 +71,7 @@ li {
 
 body {
   width: 100%;
-
+  box-sizing: border-box;
   min-height: 100vh;
   height: auto;
   margin: auto;
@@ -157,6 +157,8 @@ body {
   padding-right: 8px;
 }
 
+
+
 #contentinner {
   display: block;
   width: 100%;
@@ -195,6 +197,7 @@ body {
   width: 0px;
 }
 #mainbuttons {
+  cursor: pointer;
   width: 100%;
   height: 30px;
   display: block;
@@ -224,7 +227,6 @@ body {
 
 .sections {
   width: 100%;
-
   display: none;
   padding: 5px 0px 0px 0px;
   visibility: hidden;
@@ -338,7 +340,6 @@ body {
   box-shadow: 0px 0px 5px 5px wheat;
 }
 
-
 .imagemain img:not(:last-child) {
   margin-bottom: 15px;
 }
@@ -360,16 +361,27 @@ body {
   box-shadow: 0px 0px 5px 5px red;
 }
 
+.column {
+  box-sizing: border-box;
+  width: 40%;
+  display: inline-block;
+  margin: 2px;
+  vertical-align: top;
+}
+
 .imagegallery {
   width: 100%;
   vertical-align: top;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
   padding-top: 20px;
 }
 
 .imagegallery img {
   cursor: pointer;
-  width: 40%;
+  width: 100%;
+  margin-top: 8px;
+  border-radius: 8px;
+  /* box-shadow: 0px 0px 4px 4px rgba(255, 255, 255, 0.7); */
 }
 .modal {
   display: none; /* Hidden by default */
@@ -389,15 +401,13 @@ body {
   background-color: rgba(0, 0, 0, 0.85); /* Black w/ opacity */
 }
 .modal img {
-  cursor:auto;
+  cursor: auto;
   margin: auto;
   display: block;
   width: 80%;
   max-width: 700px;
-  
 }
-.modal a 
-{
+.modal a {
   position: absolute;
   top: 15px;
   right: 45px;
@@ -435,11 +445,11 @@ body {
   #headermain {
     /* min-width: 310px; just specifying that it can  decrase the width it doesnt have to fit all text in one line */
     width: auto;
+    margin: 5em auto;
   }
   body {
     padding: 20px;
-    height: min-content;
-    width: fit-content;
+    min-width: min-content;
   }
   #content::before {
     height: 35px;
@@ -466,10 +476,10 @@ body {
     margin-right: 10px;
   }
 
-  .modal img{
+  .modal img {
     width: 100%;
   }
-  .modal a{
+  .modal a {
     right: 10px;
   }
 }
