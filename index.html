@@ -27,7 +27,7 @@
         <title>Ansh Chawla</title>
     </head>
     
-    <body id="main-body" class="color2-theme">
+    <body id="main-body" class="color4-theme">
         
         <header id ="headermain" data-title="Ansh Chawla">
             <div id = "logo">
@@ -54,16 +54,16 @@
         </div>
 
         <!-- Intro -->
-        <div id="intro" class="sections" data-title="Intro">
+        <article id="intro" class="sections" data-title="Intro">
             <h2><i class="far fa-arrow-alt-circle-right"></i>Intro</h2>
-            <div class = "imagemain"><img src="" data-src= "../../images/intro.jpg" alt="dispaly picture" ></div>
+            <section class = "imagemain"><img src="" data-src= "../../images/intro.jpg" alt="dispaly picture" ></section>
             <p>Hi , Myself Ansh Chawla currently pursuing B-Tech in Electronics from Punjab Engineering college.From an early age I have had passion in electronics and I made projects to solve house hold problems.I have even made a drone during my High School period .To know more about my work visit <a href="#projects">my projects page.</a>.</p>
             <p>Apart from electronics , football is one sport I like to play but without rules(because I know none 😜). With this varied liking , I always yern to learn more and more about different sectors of society and look for an alernative approach to solve the current problems like creating a food delivery bot <a href="#swayamsevika">Swayam Sevika</a> for Covid-19 under CSRC department of PEC.  </p>
-        </div>
+        </article>
 
-        <div id="projects" class = "sections" data-title="Projects">
+        <article id="projects" class = "sections" data-title="Projects">
             <h2><i class="fab fa-android"></i>Projects</h2>
-            <div class="imagemain"><img src="" data-src="../../images/featured-project.jpg"  alt="Featured Project" ><p style="text-align:center; padding-bottom: 4px;"><a href="#swayamsevika">Swayam Sevika</a></p></div>
+            <section class="imagemain"><img src="" data-src="../../images/featured-project.jpg"  alt="Featured Project" ><p style="text-align:center; padding-bottom: 4px;"><a href="#swayamsevika">Swayam Sevika</a></p></section>
             <h3>Live Projects</h3>
             <ul>
                 <li><a href="#esp32cam">Smart Doorbell</a></li>
@@ -84,14 +84,14 @@
             
         
 
-        </div>
+        </article>
         <!-- contact -->
-        <div id="contact" class="sections" data-title="Contact" >
+        <article id="contact" class="sections" data-title="Contact" >
             
             <h2><i class="far fa-id-card"></i> Contact</h2>
-            <div id="avtar">
+            <section id="avtar">
             <img src="" data-src="images/avtar.jpg" alt="profile picture">
-            </div>
+            </section>
             <h1>ansh chawla</h1>
             <h3>B-tech student</h3>
             <ul>
@@ -103,13 +103,13 @@
                 <li><a href="https://www.facebook.com/anshchawla521/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
                 
             </ul>
-        </div>
+        </article>
         
         <!--PROKECTS START HERE-->
 
-        <div id="swayamsevika" class="sections" data-title="Swayam Sevika" >
+        <article id="swayamsevika" class="sections" data-title="Swayam Sevika" >
             <h2 class="major">Swayam Sevika</h2>
-            <div class="imagemain"><img data-src="../images/SwayamSevika/SS.jpg" alt="Main image of Swayam" ></div>
+            <section class="imagemain"><img data-src="../images/SwayamSevika/SS.jpg" alt="Main image of Swayam" ></section>
             <p>So Basically this project was made by a team of people at PEC including me 
                 although the code was written by me with the help of other people in the team. 
                 The Bot is basically an advanced version of line follower with many failsafes implemented.</p><p> 
@@ -135,32 +135,33 @@
                 <li><a href = "https://www.etvbharat.com/hindi/haryana/state/chandigarh-ha/punjab-engineering-college-cyber-security-research-team-built-indigenous-robot/haryana20200521183049834" >Etv Bharat</a> </li>
                 
             </ul>
-            </div>
+        </article>
 
 
-        <div id="esp32cam" class="sections" data-title="Esp32 telegram Doorbell">
+        <article id="esp32cam" class="sections" data-title="Esp32 telegram Doorbell">
             <h2><i class="fas fa-bell"></i> ESP32 Smart doorbell</h2>
-            <div class="imagemain"><img data-src="../images/Esp32/esp32.jpg" alt="Door Bell Picture" ></div>
+            <section class="imagemain"><img data-src="../images/Esp32/esp32.jpg" alt="Door Bell Picture" ></section>
             <p>This is low cost smart doorbell which is based around an Esp32 micontroller which sends a photo of the person who rang the bell outside the door via Telegram Api.
                 It ties into a current doorbell system. </p>
                 <p>It detects the doorbell push via a circuit known as capacitive dropper which i used to power an optocoupler which then signals the microcontroller that someone has pushed the bell and hence the microcontroller takes a photo and sends it into a telgram group in which members of the house could be added.</p>
                 <p>I also added some configuration/test commands which could be sent to the microcontroller via telegram and debugging or testing could thus be done easily </p>
-        </div>
+        </article>
         
 
-        <div id="ACU" class="sections" data-title="Automatic Case Updater">
+        <article id="ACU" class="sections" data-title="Automatic Case Updater">
             <h2>Automatic Case Updater</h2>
-            <div class="imagemain"><img data-src="../images/ACU/ACU.jpg" alt="" ><img src="" data-src="../../images/ACU/ACU1.jpg" alt="" ></div>
+            <section class="imagemain"><img data-src="../images/ACU/ACU.jpg" alt="" ><img src="" data-src="../../images/ACU/ACU1.jpg" alt="" ></section>
             <p>This was a python program I Wrote which did web scrapping on site of highcourt Chandigarh to gain info about different cases and then puts that into an excel file and also sets a reminder in google calander .I wrote this program to help my Mother and Father as they are lawyers. This program also deleted any repeated case entries, organised the case data in excel file neatly. It used Google's API's(calander and drive Api) .It used libraries such as Gspread , requests , pickle , google o-auth .   </p>
-        </div>
-        <div id="BSC" class= "sections" data-title="Bluetooth Solar Car">
+        </article>
+
+        <article id="BSC" class= "sections" data-title="Bluetooth Solar Car">
             <h2>Bluetooth Solar Car</h2>
-            <div class="imagemain"><img  src = "" data-src="../images/BSC/BSC2.jpg" alt="" /></div>
+            <section class="imagemain"><img  src = "" data-src="../images/BSC/BSC2.jpg" alt="" /></section>
             <p>This was a car which had a solar panel on top for charging and powering of the car , it also has ultrasonic sensor in front of the car for detecting if someone comes in front while driving and deaccerlate the car to prevent accidents its was bluetooth controlled and the app was also made by me using the MIT app inventor tool. </p>
             
 
             <h2>Image Gallery</h2>
-            <div class = "imagegallery">
+            <section class = "imagegallery">
             <div class = "column">
             <img data-src="../images/BSC/BSC.jpg">
             <img data-src="../images/BSC/BSC4.jpg">
@@ -169,52 +170,52 @@
             <img data-src="../images/BSC/BSC3.jpg">
             <img data-src="../images/BSC/BSC5.jpg">
             </div>
-            </div>
+            </section>
             
-        </div>
+        </article>
 
         
 
-        <div id="AAS" class="sections" data-title="Automatic Aquaguard System">
+        <article id="AAS" class="sections" data-title="Automatic Aquaguard System">
             <h2>Automatic Aquaguard System</h2>
             <!-- <div class="imagemain"><img src="images/AAS.jpg" alt="" /></div> -->
             <p>This is an Automatic Aquaguard System which can turn on any appliance at certain times of day for certain duration it can also be updated over the air without any cables although it requires Wi-Fi access to get time from NTP Servers on the internet and also for the updating process,
                You can See the <a href="https://github.com/anshchawla521/esp8266-timebased-appliance-Switching-OTA">Github page</a> for more information about the project</p>
-        </div>
+        </article>
 
-        <div id="AWPS" class="sections" data-title="Automatic Water Pump System">
+        <article id="AWPS" class="sections" data-title="Automatic Water Pump System">
             <h2>Automatic Water Pump System</h2>
             <!-- <div class="imagemain"><img src="images/AWPS.jpg" alt="" /></div> -->
             <p>So sometimes my mom  forgot to turn off the water pump which fills the overhead water tank of our building from the underground tank , so to solve this issue once and for all I made a water pump system after installation of which the problem was finished. The system basically 
                 when powered on would turn the water pump on for about 10 minutes and then would turn it off automatically .For restarting of the water pump the sytem had to be reset which could simply be done by turning the power switch of the system  off for 5 seconds and then turning it back on
                 . It also had low water level detection feature so that if during those 10 minutes if the underground tank was to go empty the water pump would be automatically switched off. 
             </p>
-        </div>
+        </article>
         
-        <div id="AWL" class="sections" data-title="Automatic Washroom Lights">
+        <article id="AWL" class="sections" data-title="Automatic Washroom Lights">
             <h2>Automatic Washroom <br/>Lights</h2>
-            <div class="imagemain"><img src="" data-src="../images/AWL/AWL.jpg" alt="Automatic washroom lights image"></div>
+            <section class="imagemain"><img src="" data-src="../images/AWL/AWL.jpg" alt="Automatic washroom lights image"></section>
             <p>I wanted to make my washroom lights fully automatic so I set out on journey for finding how to make them automatic. I came up with a circuit based on 555 IC in Monostable configuration .I also added two limit switches one to detect if door was open or not ,and another one to detect If the door was locked or not. The monostable configuraton was used  because there exits a time gap from when a person would closes the washroom door and changes the door lock to engaged , for this time gap the lights should remain on soo i used monostable configuration.
                 but i slighly modified it so that the charging of the capacitor would only start when the door was closed and the lock wasn't engaged , had I not modified the circuit the lights would turnoff everynow and then for short interval of time because the capacitor would get charged and then suddenly discharged.   </p>
-        </div>
+        </article>
 
-        <div id="Drone" class="sections">
+        <article id="Drone" class="sections">
             <h2>Drone</h2>
-                <div class="imagemain">
+                <section class="imagemain">
                     <div id= "" class="video" data-videoid="02by6Vlj6SE" data-starttime=6 data-endtime=64></div>
-                </div>
+                </section>
             
             <p>I made this drone a while ago just for experimenting and learning but i have some projects in mind now for which this would be used which you would see on my site in future.</p>
-        </div>
+        </article>
 
 
-        <div id="cycle" class="sections">
+        <article id="cycle" class="sections">
             <h2><i class="fas fa-biking"></i>Cycle</h2>
-            <div class="imagemain">
+            <section class="imagemain">
                 <div id= "" class="video" data-videoid="KtBUBxPBDtw" data-starttime=6 data-endtime=63></div>
-            </div>				
+            </section>				
             <p>This was my cycle to which I added lights and music system.I wanted myself to be visible in dark so that i could avoid accidents .I also didnt want to use earphones while riding as they can be dangerous so I added speakers as well </p>
-        </div>
+        </article>
 
 
 

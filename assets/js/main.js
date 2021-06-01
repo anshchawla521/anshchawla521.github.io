@@ -49,7 +49,7 @@ function onYouTubeIframeAPIReady() {
     if(!video.id){
     //if player doesnt exist make it exist
      video.id = `player${player.length}`;
-     console.log("found div");
+    //  console.log("found div");
     if(video.dataset.videoid){
     var temp =  new YT.Player( video.id , {
          videoId: video.dataset.videoid,
