@@ -7,6 +7,15 @@
   --image-shadow: rgb(250, 205, 137, 1);
   --video-shadow: red;
 }
+.dark-new-theme {
+  --bg-color: #393939;
+  --wrapper-color: rgba(27, 31, 34, 0.7);
+  --wrapper-shadow: #00ffff;
+  --text-color: white;
+  --main-border-color: whitesmoke;
+  --image-shadow: rgb(250, 205, 137, 1);
+  --video-shadow: red;
+}
 
 .color1-theme {
   --bg-color: #ffae90;
@@ -44,6 +53,15 @@
   --main-border-color: #f6f7f8;
   --image-shadow: #e0cba8;
   --video-shadow: #e0cba8;
+}
+.color5-theme {
+  --bg-color: #073b4c;
+  --wrapper-color: #ff166e;
+  --wrapper-shadow: #ffd166;
+  --text-color: #f6f7f8;
+  --main-border-color: #f6f7f8;
+  --image-shadow: #f6fff8;
+  --video-shadow: #f6fff8;
 }
 
 h1 {
