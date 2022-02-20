@@ -80,7 +80,7 @@ function clos()
 {
     
     pausevideo(currentlocation);
-    location.hash="#";
+    location.hash="";
     
 }
 
@@ -167,7 +167,8 @@ function checklink(){
 
     if( !currentlocation  || currentlocation === '#')
     {
-        document.getElementById("headermain").style.visibility = "visible";
+        // document.getElementById("headermain").style.visibility = "visible";
+        document.getElementById("headermain").style.animation = "fade-in 1s forwards";
         document.getElementById("headermain").style.display = "block";
         console.log("header visible");
         document.title = document.getElementById("headermain").dataset.title;
@@ -178,10 +179,12 @@ function checklink(){
         if(item.className.indexOf('sections') >= 0)
         {
             
-            document.getElementById(item.id).style.visibility = "hidden";
+            // document.getElementById(item.id).style.visibility = "hidden";
+            document.getElementById(item.id).style.animation = "fade-out 1s forwards";
             document.getElementById(item.id).style.display = "none";
         }
-        document.getElementById("wrapper").style.visibility = "hidden";
+        // document.getElementById("wrapper").style.visibility = "hidden";
+        document.getElementById("wrapper").style.animation = "fade-out 1s forwards";
         document.getElementById("wrapper").style.display = "none";
 
 
@@ -205,7 +208,8 @@ function checklink(){
                 valid = true;
                 //return;
             }else{
-                document.getElementById(item.id).style.visibility = "hidden";
+                // document.getElementById(item.id).style.visibility = "hidden";
+                document.getElementById(item.id).style.animation = "fade-out 1s forwards";
                 document.getElementById(item.id).style.display = "none";
                 //hide the rest of sections
             }
@@ -221,12 +225,15 @@ function checklink(){
         }else{
             document.title = "Ansh Chawla";
         }
-        document.getElementById("headermain").style.visibility = "hidden";
+        // document.getElementById("headermain").style.visibility = "hidden";
+        document.getElementById("headermain").style.animation = "fade-out 1s forwards";
         document.getElementById("headermain").style.display = "none";
-        document.getElementById(currentlocation).style.visibility = "visible";
+        // document.getElementById(currentlocation).style.visibility = "visible";
+        document.getElementById(currentlocation).style.animation = "fade-in 1s forwards";
         document.getElementById(currentlocation).style.display = "block";
         destroymodal();
-        document.getElementById("wrapper").style.visibility = "visible";
+        // document.getElementById("wrapper").style.visibility = "visible";
+        document.getElementById("wrapper").style.animation = "fade-in 1s forwards";
         document.getElementById("wrapper").style.display = "block";
         loadvideo(currentlocation);
         
@@ -245,8 +252,6 @@ function checklink(){
         //window.location.hash = '';
         window.alert("invalid section or under development");
         window.history.back();
-        //document.getElementById("wrapper").style.visibility = "hidden";
-        //document.getElementById("wrapper").style.display = "none";
     }
 }
 
