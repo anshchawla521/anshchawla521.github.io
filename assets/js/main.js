@@ -55,7 +55,7 @@ function onYouTubeIframeAPIReady() {
          videoId: video.dataset.videoid,
          playerVars: {
              'rel' : 0,
-             'autoplay' : 1,
+             'autoplay' : 0,  // because no mute option available
              'start': video.dataset.starttime,
              'end': video.dataset.endtime,
              'origin': 'https://anshchawla521.github.io'
