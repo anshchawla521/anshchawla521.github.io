@@ -91,7 +91,7 @@
                 <!-- If a article doesnt exist with the class sections then automatically says under development -->
                 <li><a href="#CRSFHLA">CRSF protocol anaylzer</a></li>
                 <li><a href="#DIYFC">DIYFC firmware</a></li>
-                <li><a href="#autodrone">Constant height hover drone</a></li>
+                <li><a href="#lidardrone">Altitude-hold drone</a></li>
                 <li><a href="#hover">Hovercraft</a></li>
                 <li><a href="#autodrone">Autonomus drone</a></li>
                 <li><a href="#esp32cam">Smart Doorbell</a></li>
@@ -228,13 +228,13 @@
         </article>
 
         <article id="CRSFHLA" class="sections">
-            <h2><i class="fas fa-biking"></i>CRSF logic anaylzer</h2>
+            <h2>CRSF logic anaylzer</h2>
             <p>This was a high level logic anaylzer extension originally started by Max on github and I further continued and completed the project to a stable point. The extension basically analyses the packet of a CRSF protocol and displays its meaning after decoding it. It also checks for CRC errors if there are any. </p>
             <p style="font-size:xx-large"><a href="https://github.com/anshchawla521/CRSF-HLA"><i class="fab fa-github"></i></a></p>
         </article>
         
         <article id="hover" class="sections">
-            <h2><i class="fas fa-biking"></i>Hovercraft</h2>
+            <h2>Hovercraft</h2>
             <section class="imagemain">
                 <div id= "" class="video" data-videoid="7LfIhM_mCa0"></div>
             </section>				
@@ -244,12 +244,30 @@
         </article>
 
         <article id="DIYFC" class="sections">
-            <h2><i class="fas fa-biking"></i>DIYFC</h2>
+            <h2>DIYFC</h2>
             <section class="imagemain">
                 <div id= "" class="video" data-videoid="4IaC4JzNY4I"></div>
             </section>				
             <p>This was custom drone firmware for stm32f4 based flight controllers(FC). It was my major project during my B-Tech in Electronics. </p>
             <p style="font-size:xx-large"><a href="https://github.com/anshchawla521/DIY_FC"><i class="fab fa-github"></i></a></p>
+        </article>
+
+        <article id="autodrone" class="sections">
+            <h2>Autonoumus Drone</h2>	
+            <section class="imagemain">
+                <div id= "" class="video" data-videoid="hkAw059E5FI"></div>
+            </section>			
+            <p>This was a drone made for the competition Flipkart grid 4.0 held in IIT madras. We were supposed to make a drone which could autonomusly pickup and drop objects using aruco markers. We Firstly used a APM flight controller in combination with a raspberry pi 3 and made the raspberry pi 3 control the drone using PWM signals which are standard signals for many flight controllers. We switched between the PWM signals of the user and Raspberry pi using a mux with a duty cycle detector so that we could take control from raspberry pi wirelessly at any time. Later we left the APM flight contoller and moved onto a custom FC using a teensy duino 4.0 for which we found a basic flight controller firmware online. We modified the firmware so that Raspberry pi could control it over I2C and it could receive height data over UART from 2 ultrasonic sensors connected to an arduino. Well you may ask Did we win the competition ? No we didn't , but did we learn and enjoy making that drone ? Absolutely Yes we loved it </p>
+
+            <p style="font-size:xx-large"><a href="https://github.com/Robotics-PEC/Autonomous-Drone-RPI-Aruco"><i class="fab fa-github"></i></a></p>
+
+        </article>
+
+        <article id="lidardrone" class="sections">
+            <h2>Altitude-hold drone</h2>
+            			
+            <p></p>
+            <p style="font-size:xx-large"><a href="https://github.com/shashankmarch27/LIDAR-altitude-hold"><i class="fab fa-github"></i></a></p>
         </article>
 
 
