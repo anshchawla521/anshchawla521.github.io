@@ -251,7 +251,11 @@ function checklink(){
     }else{
         //window.location.hash = '';
         window.alert("invalid section or under development");
-        window.history.back();
+        if(window.history.length != 1){
+            window.history.back(); // previous page exists
+        }else{
+            window.location.hash = '';
+        }
     }
 }
 
