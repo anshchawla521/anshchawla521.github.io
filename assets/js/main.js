@@ -172,9 +172,13 @@ function checklink(){
     if( !currentlocation  || currentlocation === '#')
     {
         // document.getElementById("headermain").style.visibility = "visible";
-        document.getElementById("headermain").style.animation = "fade-in 1s forwards";
+        document.getElementById("headermain").style.animation = "fade-in 0.8s forwards";
         document.getElementById("headermain").style.display = "block";
         console.log("header visible");
+        setTimeout(() => {
+            window.scrollTo({top: 0, behavior: "smooth"});
+        },0.8); // Match this delay to the CSS transition duration
+
         document.title = document.getElementById("headermain").dataset.title;
         // looking for all divs with class headings and hding them and at end hiding wrapper
         let x = Array.from(document.getElementById("wrapper").querySelectorAll(".sections"));
@@ -184,11 +188,11 @@ function checklink(){
         {
             
             // document.getElementById(item.id).style.visibility = "hidden";
-            document.getElementById(item.id).style.animation = "fade-out 1s forwards";
+            document.getElementById(item.id).style.animation = "fade-out 0s forwards";
             document.getElementById(item.id).style.display = "none";
         }
         // document.getElementById("wrapper").style.visibility = "hidden";
-        document.getElementById("wrapper").style.animation = "fade-out 1s forwards";
+        document.getElementById("wrapper").style.animation = "fade-out 0s forwards";
         document.getElementById("wrapper").style.display = "none";
 
 
@@ -213,7 +217,7 @@ function checklink(){
                 //return;
             }else{
                 // document.getElementById(item.id).style.visibility = "hidden";
-                document.getElementById(item.id).style.animation = "fade-out 1s forwards";
+                document.getElementById(item.id).style.animation = "fade-out 0s forwards";
                 document.getElementById(item.id).style.display = "none";
                 //hide the rest of sections
             }
@@ -230,16 +234,24 @@ function checklink(){
             document.title = "Ansh Chawla";
         }
         // document.getElementById("headermain").style.visibility = "hidden";
-        document.getElementById("headermain").style.animation = "fade-out 1s forwards";
+        // header main is the main page 
+        
+        document.getElementById("headermain").style.animation = "fade-out 0s forwards";
         document.getElementById("headermain").style.display = "none";
         // document.getElementById(currentlocation).style.visibility = "visible";
-        document.getElementById(currentlocation).style.animation = "fade-in 1s forwards";
+        document.getElementById(currentlocation).style.animation = "fade-in 0.8s forwards";
         document.getElementById(currentlocation).style.display = "block";
         destroymodal();
+
         // document.getElementById("wrapper").style.visibility = "visible";
-        document.getElementById("wrapper").style.animation = "fade-in 1s forwards";
+        // wrapper is the secondary window
+        document.getElementById("wrapper").style.animation = "fade-in 0.8s forwards";
         document.getElementById("wrapper").style.display = "block";
         loadvideo(currentlocation);
+
+        setTimeout(() => {
+            window.scrollTo({top: 0, behavior: "smooth"});
+          },0.8); // Match this delay to the CSS transition duration
         
         //unhide then start loading the img
         let images = document.getElementById(currentlocation).querySelectorAll("img");
