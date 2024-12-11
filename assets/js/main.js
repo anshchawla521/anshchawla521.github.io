@@ -74,7 +74,11 @@ videoQueue.pop();
 function back()
 {
     pausevideo(currentlocation);
-    window.history.back()
+    if(window.history.length != 1){
+        window.history.back();
+    }else{
+        window.location.hash = '';
+    }
 }
 function clos()
 {
