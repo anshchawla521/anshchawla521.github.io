@@ -136,9 +136,10 @@ li {
     background-color: rgba(245 ,222 , 179 , 0.9);*/
   background-color: var(--wrapper-color);
   text-align: center;
-  padding: 20px 10px 0 10px;
+  padding: 20px 10px 20px 10px;
   color: var(--text-color);
   transition: all 500ms;
+  
 }
 
 body {
@@ -299,6 +300,7 @@ body {
   padding: 5px 0px 0px 0px;
   visibility: hidden;
   box-sizing: border-box;
+  
 }
 
 .sections p {
@@ -313,8 +315,39 @@ body {
   font-size: 13px;
 }
 
-.sections p:last-child {
+/* .sections p:last-child {
   margin-bottom: 20px;
+} */
+
+.github-buttons{
+  background-color: black;
+  border-radius: 10px;
+  vertical-align: middle;
+  padding-left:15px !important;
+  margin: 8px 8px 8px 8px !important;
+  padding-right:15px !important;
+  transition: transform 0.25s ease-in-out,
+    box-shadow 0.25s ease-in-out;
+  transform-origin: center;
+  /* outline: none; */
+  
+
+}
+.github-buttons:hover{
+  box-shadow:  0 0 2px 2px white;
+  /* outline: 2px solid white; */
+  transform: scale(1.1);
+}
+
+.github-buttons a{
+  text-decoration: none !important;
+  vertical-align: middle;
+}
+
+.github-buttons i{
+  vertical-align: -22%;
+  font-size:xx-large !important;
+  margin-right: 8px;
 }
 
 .sections a {
