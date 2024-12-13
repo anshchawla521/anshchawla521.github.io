@@ -17,7 +17,11 @@ tag.src = "https://www.youtube.com/iframe_api";
 var firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-
+// pause the video if back button of browser is pressed
+window.addEventListener('popstate', function () {
+    // Redirect to a specific URL or page
+    pausevideo(currentlocation)
+});
 
 
 var player = new Array() ;
