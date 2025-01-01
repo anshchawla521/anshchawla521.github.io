@@ -248,7 +248,7 @@
         <article id="CRSFHLA" class="sections">
             <h2>CRSF logic anaylzer</h2>
             <p>This was a high level logic anaylzer extension originally started by Max on github and I further continued and completed the project to a stable point. The extension basically analyses the packet of a CRSF protocol and displays its meaning after decoding it. It also checks for CRC errors if there are any. </p>
-            <p class="github-buttons"><a href="https://github.com/anshchawla521/CRSF-HLA"><i class="fab fa-github"></i>View on Github</a></p>
+            <a href="https://github.com/anshchawla521/CRSF-HLA"><p class="github-buttons"><i class="fab fa-github"></i>View on Github</p></a>
         </article>
         
         <article id="hover" class="sections">
@@ -256,10 +256,12 @@
             <section class="imagemain">
                 <div id= "" class="video" data-videoid="7LfIhM_mCa0"></div>
             </section>				
-            <p>This was a hovercraft made by a team of 5 people for the hovermania competition at IIT Kanpur. We unfortuanately didnt win any prize but enjoyed the competition as well as Building this hovercraft</p>
+            <p>This was a hovercraft made by a team of 5 people for the hovermania competition at IIT Kanpur. We unfortuanately didn't win any prize but enjoyed the competition as well as Building this hovercraft.</p>
+            <p>Some key features of the hoveracraft that were added into the V2 were the reversing of the both motors, This allows us to create a suction on thr ground, so that the competitor cannot push you over the edge. The reversing of the thrust motor allows you to go in the reverse direction which is useful if you get stuck in a corner.</p>
+            <p>This reversing of motor was only possible because we used DSHOT600 protocol for communicating with the ESC. This protocol was emulated/ works using timers of the STM32 in PWM mode alongside DMA(direct memory access) feature. So duty cycle numbers are loaded from the memory on the fly and the DSHOT600 signal is generated. This was quite hard as there was little to no documenation for the DSHOT600 protocol.</p>
             
-            <p class="github-buttons"><a href="https://github.com/Robotics-Society-PEC/Hovercraft/"><i class="fab fa-github" ></i>View V1 on Github </a></p>
-            <p class="github-buttons"><a href="https://github.com/anshchawla521/HOVERCRAFT_DIY_FC/"><i class="fab fa-github" ></i>View V2 on Github </a></p>
+            <a href="https://github.com/Robotics-Society-PEC/Hovercraft/"><p class="github-buttons"><i class="fab fa-github" ></i>View V1 on Github </p></a>
+            <a href="https://github.com/anshchawla521/HOVERCRAFT_DIY_FC/"><p class="github-buttons"><i class="fab fa-github" ></i>View V2 on Github </p></a>
             
 
 
@@ -271,7 +273,7 @@
                 <div id= "" class="video" data-videoid="4IaC4JzNY4I"></div>
             </section>				
             <p>This was custom drone firmware for stm32f4 based flight controllers(FC). It was my major project during my B-Tech in Electronics. </p>
-            <p class="github-buttons"><a href="https://github.com/anshchawla521/DIY_FC"><i class="fab fa-github"></i>View on Github</a></p>
+            <a href="https://github.com/anshchawla521/DIY_FC"><p class="github-buttons"><i class="fab fa-github"></i>View on Github</p></a>
         </article>
 
         <article id="autodrone" class="sections">
@@ -282,7 +284,7 @@
             <p>This was a drone made for the competition Flipkart grid 4.0 held in IIT madras. We were supposed to make a drone which could autonomusly pickup and drop objects using aruco markers. We Firstly used a APM flight controller in combination with a raspberry pi 3 and made the raspberry pi 3 control the drone using PWM signals which are standard signals for many flight controllers. We switched between the PWM signals of the user and Raspberry pi using a mux with a duty cycle detector so that we could take control from raspberry pi wirelessly at any time. Later we left the APM flight contoller and moved onto a custom FC using a teensy duino 4.0 for which we found a basic flight controller firmware online. We modified the firmware so that Raspberry pi could control it over I2C and it could receive height data over UART from 2 ultrasonic sensors connected to an arduino. Well you may ask Did we win the competition ? No we didn't , but did we learn and enjoy making that drone ? Absolutely Yes we loved it.</p>
             <p> This project ultimately lead to me taking up and making a <a href="#DIYFC">custom firmware</a> for drones from scratch</p>
 
-            <p class="github-buttons"><a href="https://github.com/Robotics-Society-PEC/Autonomous-Drone-RPI-Aruco"><i class="fab fa-github"></i>View on Github</a></p>
+            <a href="https://github.com/Robotics-Society-PEC/Autonomous-Drone-RPI-Aruco"><p class="github-buttons"><i class="fab fa-github"></i>View on Github</p></a>
 
         </article>
 
@@ -292,7 +294,7 @@
                 <div id= "" class="video" data-videoid="ZPNwiZ4aJUg"></div>
             </section>	
             
-            <p>After an unsecceful attempt at making an <a href="#autodrone">autonomus drone</a> this was a successful attempt at making a Altitude-hold control drone.</p>
+            <p>After an unsuccessful attempt at making an <a href="#autodrone">autonomus drone</a> this was a successful attempt at making a Altitude-hold control drone.</p>
             <!-- <p style="font-size:xx-large"><a href="https://github.com/shashankmarch27/LIDAR-altitude-hold"><i class="fab fa-github"></i></a></p> -->
         </article>
 
