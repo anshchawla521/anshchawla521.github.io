@@ -90,6 +90,7 @@
             <h3>Projects</h3>
             <ul>
                 <!-- If a article doesnt exist with the class sections then automatically says under development -->
+                <li><a href="#SLIC">Soldering Iron Controller</a></li>
                 <li><a href="#CRSFHLA">CRSF protocol anaylzer</a></li>
                 <li><a href="#DIYFC">DIYFC firmware</a></li>
                 <li><a href="#lidardrone">Altitude-hold drone</a></li>
@@ -113,6 +114,16 @@
 
         </article>
         <!--PROJECTS START HERE-->
+
+
+        <article id="SLIC" class="sections" data-title="Soldering Iron Controller">
+            <h2>Soldering Iron<br/>Controller</h2>
+            <section class="imagemain"><img src="" data-src="https://raw.githubusercontent.com/anshchawla521/DIY_T12_iron/master/files/3d%20model/top_PCB.png" alt="Soldering Iron Controller front image"></section>
+            <section class="imagemain"><img src="" data-src="https://raw.githubusercontent.com/anshchawla521/DIY_T12_iron/master/files/3d%20model/bottom_PCB.png" alt="Soldering Iron Controller front image"></section>
+            <p>So when i started this project my goal was to make a soldering iron controller which can support all sorts of tips from Hakko A1321 to JBC C210 and to make the PCB fit inside a Hakko 936 Soldering iron, and that is what i have accomplished as well. The project was based of some other youtuber's project but i had to make a lot of changes both in HW and SW to add support for all irons + make it commercial. One of my other goals was to make it portable that is why i added a XT60 connector as well as USB-C PD support. The circuit is technically capable of going upto 50V DC and was designed with those sot of clearances in mind.  </p>
+        
+            <a href="https://github.com/anshchawla521/DIY_T12_iron"><p class="github-buttons"><i class="fab fa-github"></i>View on Github</p></a>
+        </article>
 
         <article id="swayamsevika" class="sections" data-title="Swayam Sevika" >
             <h2 class="major">Swayam Sevika</h2>
@@ -284,6 +295,17 @@
             <p>This was a drone made for the competition Flipkart grid 4.0 held in IIT madras. We were supposed to make a drone which could autonomusly pickup and drop objects using aruco markers. We Firstly used a APM flight controller in combination with a raspberry pi 3 and made the raspberry pi 3 control the drone using PWM signals which are standard signals for many flight controllers. We switched between the PWM signals of the user and Raspberry pi using a mux with a duty cycle detector so that we could take control from raspberry pi wirelessly at any time. Later we left the APM flight contoller and moved onto a custom FC using a teensy duino 4.0 for which we found a basic flight controller firmware online. We modified the firmware so that Raspberry pi could control it over I2C and it could receive height data over UART from 2 ultrasonic sensors connected to an arduino. Well you may ask Did we win the competition ? No we didn't , but did we learn and enjoy making that drone ? Absolutely Yes we loved it.</p>
             <p> This project ultimately lead to me taking up and making a <a href="#DIYFC">custom firmware</a> for drones from scratch</p>
 
+            <h2>Image Gallery</h2>
+            <section class = "imagegallery">
+            <div class = "column">
+            <img data-src="../images/autodrone/pic1.jpg">
+            <img data-src="../images/autodrone/pic3.jpg">
+            </div>
+            <div class = "column">
+            <img data-src="../images/autodrone/pic2.jpg">
+            <img data-src="../images/autodrone/pic4.jpg">
+            </div>
+            </section>
             <a href="https://github.com/Robotics-Society-PEC/Autonomous-Drone-RPI-Aruco"><p class="github-buttons"><i class="fab fa-github"></i>View on Github</p></a>
 
         </article>
