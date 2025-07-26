@@ -63,6 +63,61 @@
   --image-shadow: #f6fff8;
   --video-shadow: #f6fff8;
 }
+
+.color6-theme {
+  --bg-color: #161B22;
+  --wrapper-color: #222831;         /* Wrapper: Deep neutral grey */
+  --wrapper-shadow: #FF4ECD;        /* Soft mint accent as shadow highlight */
+  --text-color: #D3D3D3;            /* Light gray for readability */
+  --main-border-color: #FF6B6B;     /* Coral red for visual pops (borders/buttons) */
+  --image-shadow: #FF4ECD;          /* Slight mint glow for images */
+  --video-shadow: #4ECDC4;          /* Matches image shadow for consistency */
+}
+
+.color7-theme {
+  --bg-color: #161B22;             /* Dark navy - dev-friendly aesthetic */
+  --wrapper-color: #222831;        /* Soft container bg */
+  --wrapper-shadow: #00FFF7;       /* Electric cyan glow */
+  --text-color: #D3D3D3;           /* Light gray for readability */
+  --main-border-color: #FF6B6B;    /* Bright coral accent */
+  --image-shadow: #4ECDC4;         /* Mint glow around images */
+  --video-shadow: #4ECDC4;         /* Matching glow */
+}
+
+.color8-theme {
+--bg-color: #0E0E0E;
+--wrapper-color: #1C1C1E;
+--wrapper-shadow: #00FFF7;
+--text-color: #E0E0E0;
+--main-border-color: #3DE5A3;
+--image-shadow: #23D5AB;
+--video-shadow: #23D5AB;
+
+}
+
+.color9-theme {
+  --bg-color: #121212;
+  --wrapper-color: #1E1E1E;
+  --wrapper-shadow: #2C2C2C;
+  --text-color: #CCCCCC;
+  --main-border-color: #888888;
+  --image-shadow: #444444;
+  --video-shadow: #444444;
+}
+
+.color10-theme {
+
+  --bg-color: #1A120F;
+--wrapper-color: #2C1E1C;
+--wrapper-shadow: #FFB347;
+--text-color: #F2E9E4;
+--main-border-color: #FF6B6B;
+--image-shadow: #FFD166;
+--video-shadow: #FFD166;
+
+}
+
+
 /* 
 *{
   transition: all 800ms;
