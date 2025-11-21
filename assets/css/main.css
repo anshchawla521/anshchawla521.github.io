@@ -6,7 +6,10 @@
   --main-border-color: whitesmoke;
   --image-shadow: rgb(250, 205, 137, 1);
   --video-shadow: red;
+  --hover-bg: rgba(255,255,255,0.12);
+  --hover-color: var(--text-color);
 }
+
 .dark-new-theme {
   --bg-color: #393939;
   --wrapper-color: rgba(27, 31, 34, 0.7);
@@ -15,6 +18,8 @@
   --main-border-color: whitesmoke;
   --image-shadow: rgb(250, 205, 137, 1);
   --video-shadow: red;
+  --hover-bg: #fa75ba;
+  --hover-color:  rgb(250, 205, 137);
 }
 
 .color1-theme {
@@ -103,6 +108,8 @@
   --main-border-color: #888888;
   --image-shadow: #444444;
   --video-shadow: #444444;
+  --hover-bg: rgba(255,255,255,0.12);
+  --hover-color: var(--text-color);
 }
 
 .color10-theme {
@@ -204,6 +211,7 @@ body {
   height: auto;
   margin: auto;
   background-color: var(--bg-color);
+  -webkit-tap-highlight-color: transparent;
   /* background-color: #1d1b26; */
   /* background-image: url(../../images/bg.jpg); */
   background-repeat: no-repeat;
@@ -469,10 +477,10 @@ body {
     box-shadow 0.25s ease-in-out, color 0.25s ease-in-out;
 }
 #contact ul li a:hover {
-  color: rgb(250, 205, 137);
-  box-shadow: inset 0 0 2px 2px red;
+  color: var(--hover-color);
+  box-shadow: inset 0 0 2px 2px rgba(137, 137, 137, 0.2);
   transform: scale(1.3);
-  background-color: #fa75ba;
+  background-color: var(--hover-bg);
 }
 
 .imagemain {
