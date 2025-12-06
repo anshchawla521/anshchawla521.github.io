@@ -92,6 +92,8 @@ function clos()
     
 }
 
+let scrollPosition = 0; // Variable to store the current scroll position
+
 function createmodal(currentlocation){
     // will check if a particular image is part of gallery class or not if yes add modal div in bottom line
     if(document.getElementById(currentlocation).querySelector(".imagegallery")){
@@ -119,6 +121,15 @@ function createmodal(currentlocation){
     image.onclick = function(){
         // let modal = document.getElementsByClassName('modal');
         // console.log(modal);
+
+        // Store the current scroll position
+        scrollPosition = window.scrollY;
+
+         // Scroll to the top of the page
+        window.scrollTo({ top: 50, behavior: 'smooth' });
+
+        // Show the modal and set the image source
+
         modal.style.display = 'block';
         modal.querySelector('img').src = this.src;
         
@@ -133,6 +144,9 @@ function destroymodal()
     if(document.getElementById(currentlocation).querySelector(".imagegallery")){
         if(document.getElementById(currentlocation).querySelector(".imagegallery").querySelector('.modal')){
             document.getElementById(currentlocation).querySelector(".imagegallery").querySelector(".modal").style.display = "none";
+
+            // Scroll back to the original position
+            window.scrollTo({ top: scrollPosition, behavior: 'smooth' });
         }
     }
 }
