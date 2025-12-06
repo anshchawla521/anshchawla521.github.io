@@ -126,7 +126,7 @@ function createmodal(currentlocation){
         scrollPosition = window.scrollY;
 
          // Scroll to the top of the page
-        window.scrollTo({ top: 50, behavior: 'smooth' });
+        window.scrollTo({ top: 20, behavior: 'smooth' });
 
         // Show the modal and set the image source
 
