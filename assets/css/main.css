@@ -286,7 +286,7 @@ body {
   text-align: center;
   transition: background-color 0.25s ease-in-out, transform 0.25s ease-in-out;
 }
-#headermain ul :not(:last-child) {
+#headermain ul li:not(:last-child) {
   border-right: solid 1.5px var(--main-border-color);
 }
 #headermain ul li:hover {
@@ -392,6 +392,17 @@ body {
   line-height: 1.7;
   font-size: 0.95rem;
   font-weight: 500;
+}
+
+#wrapper .sections ul {
+  list-style: disc outside;
+  padding-left: 2rem;
+  padding-right: 1.25rem;
+}
+
+#wrapper .sections li {
+  margin-left: 0;
+  padding-left: 0.15rem;
 }
 
 /* .sections p:last-child {
@@ -616,10 +627,11 @@ body {
 @media only screen and (max-width: 795px) {
   #headermain ul li {
     display: block;
+    border-right: solid 1.5px var(--main-border-color);
+    border-left: solid 1.5px var(--main-border-color);
   }
   #headermain ul li:not(:last-child) {
     border-bottom: solid 1.5px var(--main-border-color);
-    border-right: none;
   }
 
   #headermain h2 {
