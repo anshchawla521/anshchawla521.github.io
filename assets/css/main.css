@@ -625,15 +625,6 @@ body {
 }
 
 @media only screen and (max-width: 795px) {
-  #headermain ul li {
-    display: block;
-    border-right: solid 1.5px var(--main-border-color);
-    border-left: solid 1.5px var(--main-border-color);
-  }
-  #headermain ul li:not(:last-child) {
-    border-bottom: solid 1.5px var(--main-border-color);
-  }
-
   #headermain h2 {
     font-size: x-large;
     margin-top: 20px;
