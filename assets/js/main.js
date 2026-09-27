@@ -8,14 +8,22 @@
 //0 player doesnt exist 1 means not paying 2 means playing
 const debug = true;
 var isYoutubeReady = false;
+var isYoutubeApiLoading = false;
 var videoQueue = Array();
 var currentlocation = window.location.hash;
 
 //  YOUTUBE
-var tag = document.createElement('script');
-tag.src = "https://www.youtube.com/iframe_api";
-var firstScriptTag = document.getElementsByTagName('script')[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+// The iframe API script is only fetched the first time a page with a video
+// is actually opened, instead of on every single page load, since most
+// visits never touch a project that has a video embedded.
+function loadYoutubeApi(){
+    if(isYoutubeApiLoading || isYoutubeReady) return;
+    isYoutubeApiLoading = true;
+    var tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+}
 
 // pause the video if back button of browser is pressed
 window.addEventListener('popstate', function () {
@@ -28,18 +36,20 @@ var player = new Array() ;
 
 function loadvideo(location){
     let videos = document.getElementById(location).querySelectorAll(".video"); // check if a video class exists in that section/div
-    if(videos){
+    if(videos && videos.length){
     videos.forEach(function(video){
     if(videoQueue.indexOf(video)<0){
-    videoQueue.push(video);   
-    console.log(`added to video `);  
+    videoQueue.push(video);
+    console.log(`added to video `);
     console.log(videoQueue);
     }
     });
-       
+
     if(isYoutubeReady)
     {
         onYouTubeIframeAPIReady();
+    }else{
+        loadYoutubeApi(); // fetch the API only now that a video is actually needed
     }
     }
 }
@@ -276,8 +286,11 @@ function checklink(){
        
 
         images.forEach(function(img){
-            img.src = img.dataset.src; 
-            
+            if(img.dataset.src && img.src !== img.dataset.src){
+            img.decoding = "async";
+            img.loading = "lazy"; // extra safety net for multi-image galleries
+            img.src = img.dataset.src;
+            }
         });
         createmodal(currentlocation);
   

@@ -11,13 +11,15 @@
         <meta property="og:type" content="website" />
 		<meta property="og:description" content="Electronics Enthusiast"/>
 		<meta property="og:image" content="https://anshchawla521.github.io/images/display_fb.jpg"/>
-        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:type" content="image/jpeg" />
         <meta property="og:image:width" content="1197" />
         <meta property="og:image:height" content="626" />
         <meta property="og:image:alt" content="Profile Photo" />
 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400..800&display=swap">
         <link rel="stylesheet" href="assets/css/all.min.css">
-        <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
         <link rel="stylesheet" href="assets/css/resetstylesheet.css">
         <link rel="stylesheet" href="assets/css/main.css">
         <link rel="shortcut icon" href="images/icon.png" type="image/icon type">
@@ -58,7 +60,7 @@
         <!-- Intro -->
         <article id="intro" class="sections" data-title="Intro">
             <h2><i class="far fa-arrow-alt-circle-right"></i>Intro</h2>
-            <section class = "imagemain"><img src="" data-src= "../../images/intro.jpg" alt="display picture" ></section>
+            <section class = "imagemain"><img data-src="../../images/intro2.jpg" alt="display picture" ></section>
             <p>Hi , Myself Ansh Chawla currently doing a job in my dream company. From an early age I have had passion in electronics
                  and I made projects to solve house hold problems. I have even made a drone during my High School period and got into 
                  the FPV domain later in college. To know more about my work visit <a href="#projects">my projects page</a>.</p>
@@ -79,7 +81,7 @@
             
             <h2><i class="far fa-id-card"></i> Contact</h2>
             <section id="avtar">
-            <img src="" data-src="images/avtar.jpg" alt="profile picture">
+            <img data-src="images/avtar.jpg" alt="profile picture">
             </section>
             <h1>ansh chawla</h1>
             <h3>Electronics Enthusiast</h3>
@@ -142,8 +144,8 @@
 
         <article id="SLIC" class="sections" data-title="Soldering Iron Controller">
             <h2>Soldering Iron<br/>Controller</h2>
-            <section class="imagemain"><img src="" data-src="https://raw.githubusercontent.com/anshchawla521/DIY_T12_iron/master/files/3d%20model/top_PCB.png" alt="Soldering Iron Controller front image" style = "background-color: black;"></section>
-            <section class="imagemain"><img src="" data-src="https://raw.githubusercontent.com/anshchawla521/DIY_T12_iron/master/files/3d%20model/bottom_PCB.png" alt="Soldering Iron Controller front image" style = "background-color: black;"></section>
+            <section class="imagemain"><img data-src="https://raw.githubusercontent.com/anshchawla521/DIY_T12_iron/master/files/3d%20model/top_PCB.png" alt="Soldering Iron Controller front image" style = "background-color: black;"></section>
+            <section class="imagemain"><img data-src="https://raw.githubusercontent.com/anshchawla521/DIY_T12_iron/master/files/3d%20model/bottom_PCB.png" alt="Soldering Iron Controller front image" style = "background-color: black;"></section>
             <p>So when i started this project my goal was to make a soldering iron controller which can support all sorts of tips from Hakko A1321 to JBC C210 and to make the PCB fit inside a Hakko 936 Soldering iron, and that is what i have accomplished as well. 
                 The project was based of some other youtuber's project but i had to make a lot of changes both in HW and SW to add support for all irons + make it commercial. One of my other goals was to make it portable that is why i added a XT60 
                 connector as well as USB-C PD support. The circuit is technically capable of going upto 50V DC and was designed with those sort of clearances in mind.  </p>
@@ -183,7 +185,7 @@
 
         <article id="DFPC" class= "sections" data-title="Device for people with cataplexy">
             <h2>Device for people with cataplexy</h2>
-            <section class="imagemain"><img  src = "" data-src="../images/DFPC/IMG_20210305_185947.jpg" alt="" /></section>
+            <section class="imagemain"><img data-src="../images/DFPC/IMG_20210305_185947.jpg" alt="" /></section>
             <p>This device was made to help people with cataplexy. So what happens in that people with cataplexy have brief loss of muscle control and can fall on there backs. So this project was made to as to prevent these people from hurting there spine when they fall,by inflating a cuff around there necks.</p>
             
 
@@ -210,14 +212,14 @@
 
         <article id="ACU" class="sections" data-title="Automatic Court Case Info Updater">
             <h2>Automatic Court Case Info Updater</h2>
-            <section class="imagemain"><img data-src="../images/ACU/ACU.jpg" alt="" ><img src="" data-src="../../images/ACU/ACU1.jpg" alt="" ></section>
+            <section class="imagemain"><img data-src="../images/ACU/ACU.jpg" alt="" ><img data-src="../../images/ACU/ACU1.jpg" alt="" ></section>
             <p>This was a python program I Wrote which did web scrapping on site of highcourt Chandigarh to gain info about different cases and then puts that into an excel file and also sets a reminder in google calander .I wrote this program to help my Mother and Father as they are lawyers. This program also deleted any repeated case entries, organised the case data in excel file neatly. It used Google's API's(calander and drive Api) .It used libraries such as Gspread , requests , pickle , google o-auth .   </p>
             <a href="https://github.com/anshchawla521/Automatic-Court-Case-Info-Updater"><p class="github-buttons"><i class="fab fa-github"></i>View on Github</p></a>
         </article>
 
         <article id="BSC" class= "sections" data-title="Bluetooth Solar Car">
             <h2>Bluetooth Solar Car</h2>
-            <section class="imagemain"><img  src = "" data-src="../images/BSC/BSC2.jpg" alt="" /></section>
+            <section class="imagemain"><img data-src="../images/BSC/BSC2.jpg" alt="" /></section>
             <p>This was a car which had a solar panel on top for charging and powering of the car , it also has ultrasonic sensor in front of the car for detecting if someone comes in front while driving and deaccerlate the car to prevent accidents its was bluetooth controlled and the app was also made by me using the MIT app inventor tool. </p>
             
 
@@ -255,7 +257,7 @@
         
         <article id="AWL" class="sections" data-title="Automatic Washroom Lights">
             <h2>Automatic Washroom <br/>Lights</h2>
-            <section class="imagemain"><img src="" data-src="../images/AWL/AWL.jpg" alt="Automatic washroom lights image"></section>
+            <section class="imagemain"><img data-src="../images/AWL/AWL.jpg" alt="Automatic washroom lights image"></section>
             <p>I wanted to make my washroom lights fully automatic so I set out on journey for finding how to make them automatic. I came up with a circuit based on 555 IC in Monostable configuration .I also added two limit switches one to detect if door was open or not ,and another one to detect If the door was locked or not. The monostable configuraton was used  because there exits a time gap from when a person would closes the washroom door and changes the door lock to engaged , for this time gap the lights should remain on soo i used monostable configuration.
                 but i slightly modified it so that the charging of the capacitor would only start when the door was closed and the lock wasn't engaged , had I not modified the circuit the lights would turnoff everynow and then for short interval of time because the capacitor would get charged and then suddenly discharged.   </p>
         </article>
@@ -271,7 +273,7 @@
 
         <article id="Alien" class="sections" data-title="The Light House of Alien Spaceship">
             <h2><i class="fab fa-reddit-alien"></i> The Light House of Alien Spaceship</h2>
-            <section class="imagemain"><img data-src="../images/alienproject/project.png" alt="School Article" ></section>
+            <section class="imagemain"><img data-src="../images/alienproject/project.jpg" alt="School Article" ></section>
             
         </article>
 
@@ -294,7 +296,7 @@
             <section class="imagemain">
                 <div id= "" class="video" data-videoid="7LfIhM_mCa0"></div>
             </section>
-            <section class="imagemain"><img src="" data-src="https://raw.githubusercontent.com/anshchawla521/HOVERCRAFT_DIY_FC/refs/heads/main/assets/cad.png" alt="Hovercraft CAD image" style = "background-color: black;"></section>				
+            <section class="imagemain"><img data-src="https://raw.githubusercontent.com/anshchawla521/HOVERCRAFT_DIY_FC/refs/heads/main/assets/cad.png" alt="Hovercraft CAD image" style = "background-color: black;"></section>				
             <p>This was a hovercraft made by a team of 5 people for the hovermania competition at IIT Kanpur. We unfortunately didn't win any prize but enjoyed the competition as well as Building this hovercraft.</p>
             <p>Some key features of the hovercraft that were added into the V2 were the reversing of the both motors, This allows us to create a suction on the ground, so that the competitor cannot push you over the edge. The reversing of the thrust motor allows you to go in the reverse direction which is useful if you get stuck in a corner. The hovercraft design also had ducts to capture air and redirect onto motor so as to cool the motor. </p>
             <p>This reversing of motor was only possible because we used DSHOT600 protocol for communicating with the ESC. This protocol was emulated/ works using timers of the STM32 in PWM mode alongside DMA(direct memory access) feature. So duty cycle numbers are loaded from the memory on the fly and the DSHOT600 signal is generated. This was quite hard as there was little to no documentation for the DSHOT600 protocol.</p>
